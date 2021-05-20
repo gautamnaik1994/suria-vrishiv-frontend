@@ -1,5 +1,5 @@
 {
-  "name": "swasti",
+  "name": "suria",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -23,6 +23,6 @@
     "rimraf": "^3.0.2"
   },
   "dependencies": {
-    "bootstrap": "^5.0.0-beta3"
+    "bootstrap": "^v5.0.1"
   }
 }
