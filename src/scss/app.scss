@@ -1,13 +1,16 @@
-$primary: #F2D898; 
-$goldenColor:#EBCB7B;
+$primary: #f2d898;
+$goldenColor: #ebcb7b;
 $desktop-width: 992px;
 $tab-width: 768px;
 
-$font-family-sans-serif: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-  Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-sans-serif: "Raleway", -apple-system, BlinkMacSystemFont,
+  "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol";
 
-  $body-bg: #1E453E;  
-  $body-color: #fff;
+$body-bg: #1e453e;
+$body-color: #fff;
+$btn-border-radius: 0;
+$btn-padding-x: 1.25rem;
 
 @import "./fonts";
 @import "./mixins";
@@ -26,7 +29,26 @@ html {
 body {
 }
 
-.fancy-font{
-  font-family: 'Playfair Display',sans-serif;
+.btn {
+  color: white;
 }
 
+.fancy-font {
+  font-family: "Playfair Display", sans-serif;
+}
+
+.s-underline {
+  position: relative;
+  &:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    border-radius: 20px;
+    background: $primary;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 16px;
+  }
+}

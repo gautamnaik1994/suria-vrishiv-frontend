@@ -1,28 +1,57 @@
 .home {
   .banner {
-    background-image: url('../img/Banner.png');
-    height:100vh;
+    background-image: url("../img/Banner.png");
+    height: 100vh;
     background-position: center bottom;
     display: flex;
     place-content: center;
     align-items: center;
-
   }
-  .golden-house-container{
-    border:1px solid $primary;
-    padding: 25px;
-    width: 80vw;
-    margin-top: 2rem;
-    img{
-      width: calc(100vw - 25px - 1.5rem);
-      height: auto;
+  .p-container {
+    margin-top: 3rem;
+    .p-title {
+      margin-top: 3rem;
     }
-    @include tab{
-      width: 44%;
-      padding: 40px;
-      img{
-        width: calc(100% + 165px);
+    @include tab {
+      display: flex;
+      align-items: center;
+    }
+    @include desktop {
+      .p-title {
+        margin-top: 6rem;
+      }
+    }
+  }
+  .golden-house-container {
+    padding: 25px;
+    margin-bottom: 2rem;
+    img {
+      width: 100%;
+    }
+    .box {
+      border: 1px solid $primary;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 100px;
+      z-index: -1;
+      left: 0;
+    }
+    @include tab {
+      margin-bottom: 0;
+      img {
+        width: 300px;
+      }
+    }
+    @include desktop {
+      padding: 45px;
+      img {
+        width: 550px;
+      }
+      .box {
+        right: 150px;
       }
     }
   }
 }
+
