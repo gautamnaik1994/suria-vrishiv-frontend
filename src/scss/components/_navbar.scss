@@ -1,15 +1,19 @@
 .navbar {
+  padding: 0;
   a {
     font-size: 20px;
     text-transform: uppercase;
     padding-left: 3rem;
     padding-right: 3rem;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: flex-end;
   }
   a.active:not(.logo-img) {
-    border:1px solid $primary;
+    border: 1px solid $primary;
+    border-top: 0;
   }
-
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  img {
+  }
 }
-

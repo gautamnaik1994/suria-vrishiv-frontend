@@ -1,0 +1,23 @@
+.insta-tile {
+  box-shadow: 5px 5px 20px 0 #011612;
+  margin-bottom: 30px;
+  .bottom-section {
+    padding: 15px;
+    padding-top: 0;
+  }
+  .profile {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -13px;
+    .right-sec {
+      padding-left: 5px;
+      padding-top: 15px;
+    }
+    img {
+      border-radius: 50%;
+      background: white;
+      border: 6px solid $body-bg;
+    }
+  }
+}
