@@ -5,23 +5,11 @@
     padding-left: 3rem;
     padding-right: 3rem;
   }
-  a.active {
-    font-weight: bold;
+  a.active:not(.logo-img) {
+    border:1px solid $primary;
   }
-  background-color: white;
+
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
-.home,
-.about,
-.spine {
-  .navbar {
-    background-color: $primary;
-  }
-}
-.home,
-.about {
-  .navbar a {
-    color: white;
-  }
-}
+
