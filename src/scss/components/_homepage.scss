@@ -8,4 +8,21 @@
     align-items: center;
 
   }
+  .golden-house-container{
+    border:1px solid $primary;
+    padding: 25px;
+    width: 80vw;
+    margin-top: 2rem;
+    img{
+      width: calc(100vw - 25px - 1.5rem);
+      height: auto;
+    }
+    @include tab{
+      width: 44%;
+      padding: 40px;
+      img{
+        width: calc(100% + 165px);
+      }
+    }
+  }
 }
