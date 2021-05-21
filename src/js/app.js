@@ -30,3 +30,21 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+
+var myNav = document.getElementById('navbar');
+var navBar = document.getElementById('navbar-image');
+window.onscroll = function () {
+  if (document.body.scrollTop >= 200) {
+    myNav.style.backgroundColor = '#000'; 
+    myNav.classList.add("navbar-min");
+    myNav.style.height = '60px'; 
+    navBar.style.height = '60px'; 
+  }
+  else {
+    myNav.style.backgroundColor = 'transparent';
+    myNav.classList.remove("navbar-min");
+    myNav.style.height = '100px';
+    navBar.style.height = '100px';
+  }
+};
