@@ -8,7 +8,8 @@
     align-items: center;
   }
   .p-container {
-    margin-top: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     .p-title {
       margin-top: 3rem;
     }
@@ -17,6 +18,8 @@
       align-items: center;
     }
     @include desktop {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
       .p-title {
         margin-top: 6rem;
       }
@@ -53,5 +56,28 @@
       }
     }
   }
+  .leaf {
+    display: none;
+    @include tab {
+      display: block;
+    }
+    &.l-leaf {
+      transform: rotate(26deg);
+      left: 0;
+    }
+    &.r-leaf {
+      right: 10px;
+      transform: rotate(215deg);
+    }
+    &.b-leaf {
+      right: 14px;
+      transform: rotate(-77deg);
+      width: 140px;
+      bottom: -50px;
+    }
+  }
+  .m-section {
+    padding-bottom: 9rem;
+    overflow: hidden;
+  }
 }
-

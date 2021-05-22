@@ -8,11 +8,17 @@
       display: block;
     }
     .poem {
-      font-size: 5vw;
+      font-size: 4.3vw;
       position: absolute;
       left: 40%;
-      top: 14%;
+      top: 10%;
       transform: translateX(-50%);
+    }
+    @include tab {
+      .poem {
+        font-size: 3.3vw;
+        left: 44%;
+      }
     }
     @include desktop {
       padding-top: 150px;
@@ -26,6 +32,15 @@
         line-height: calc(16px + (6 * 0.19vw));
         left: 50%;
         top: 20vw;
+      }
+    }
+    .native-logo {
+      @include desktop {
+        width: 25vw;
+        height: auto;
+        position: absolute;
+        top: 10vw;
+        right: 8vw;
       }
     }
   }
