@@ -44,4 +44,55 @@
       }
     }
   }
+  .p-container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    .p-title {
+      margin-top: 3rem;
+    }
+    @include tab {
+      display: flex;
+      align-items: center;
+    }
+    @include desktop {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+      .p-title {
+        margin-top: 6rem;
+      }
+    }
+  }
+  .img-grid {
+    img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+    @include tab {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 145px 145px;
+      flex: 0 0 350px;
+      padding: 25px;
+      img {
+        height: 100%;
+        object-fit: cover;
+        margin: 0;
+      }
+    }
+    @include desktop {
+      grid-gap: 20px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 265px 265px;
+      flex: 0 0 640px;
+      padding: 45px;
+    }
+  }
+  .r-leaf {
+    right: 40px;
+    transform: rotate(235deg);
+    width: 170px;
+    bottom: 0;
+  }
 }
