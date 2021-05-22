@@ -15,15 +15,17 @@
       transform: translateX(-50%);
     }
     @include desktop {
+      padding-top: 150px;
       img {
         max-width: 100%;
+        width: 100%;
+        height: auto;
       }
       .poem {
-        font-size: 16px;
-        line-height: 2;
-        width: 230px;
+        font-size: clamp(14px, 1.1vw, 18px);
+        line-height: calc(16px + (6 * 0.19vw));
         left: 50%;
-        top: 24%;
+        top: 20vw;
       }
     }
   }
