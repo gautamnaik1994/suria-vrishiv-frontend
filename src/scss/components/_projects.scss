@@ -1,11 +1,30 @@
 .projects {
   .banner {
     position: relative;
+    img {
+      max-width: 90%;
+      height: auto;
+      margin: auto;
+      display: block;
+    }
     .poem {
+      font-size: 5vw;
       position: absolute;
-      left: 50%;
-      top: 10%;
+      left: 40%;
+      top: 14%;
       transform: translateX(-50%);
+    }
+    @include desktop {
+      img {
+        max-width: 100%;
+      }
+      .poem {
+        font-size: 16px;
+        line-height: 2;
+        width: 230px;
+        left: 50%;
+        top: 24%;
+      }
     }
   }
 }
