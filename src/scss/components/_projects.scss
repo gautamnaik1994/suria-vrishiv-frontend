@@ -89,10 +89,39 @@
       padding: 45px;
     }
   }
+
   .r-leaf {
     right: 40px;
     transform: rotate(235deg);
-    width: 170px;
+    width: 180px;
+    bottom: -40px;
+  }
+  .b-leaf {
+    transform: rotate(106deg);
     bottom: 0;
+  }
+  .project-details {
+    p,
+    li {
+      font-size: 16px;
+    }
+    .b-title {
+      margin-top: 5.6rem;
+    }
+    @include tab {
+      padding-bottom: 10rem;
+      form {
+        width: 400px;
+      }
+    }
+    @include desktop {
+      .row {
+        width: 1100px;
+        margin: auto;
+      }
+      form {
+        width: 500px;
+      }
+    }
   }
 }

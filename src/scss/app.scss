@@ -1,5 +1,7 @@
 $primary: #f2d898;
 $goldenColor: #ebcb7b;
+$input-border-color: $primary;
+$input-border-radius: 0;
 $desktop-width: 992px;
 $tab-width: 768px;
 
@@ -11,6 +13,7 @@ $body-bg: #1e453e;
 $body-color: #fff;
 $btn-border-radius: 0;
 $btn-padding-x: 1.25rem;
+$input-bg: $body-bg;
 
 @import "./fonts";
 @import "./mixins";
@@ -77,4 +80,41 @@ body {
 .leaf {
   width: 130px;
   height: auto;
+  display: none;
+  @include tab {
+    display: block;
+  }
+}
+
+.s-list {
+  list-style: none;
+  padding-left: 15px;
+  li {
+    line-height: 1.8;
+  }
+  li:before {
+    content: "○";
+    color: $primary;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    margin-right: 10px;
+    font-size: 13px;
+  }
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px $body-bg inset !important;
+  -webkit-text-fill-color: $primary !important;
+}
+
+input {
+  border: 0 !important;
+  border-bottom: 1px solid $primary !important;
+}
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
