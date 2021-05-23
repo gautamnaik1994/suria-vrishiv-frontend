@@ -1,51 +1,31 @@
 .contact {
-  .form-control {
-    border-color: $primary;
-    border-radius: 0;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+  @include tab {
+    .c-right-sec {
+      padding-top: 19rem;
+      padding-left: 6rem;
+    }
   }
-  label {
-    color: $primary;
-    opacity: 0.4;
-    font-size: 18px;
-    line-height: 16px;
-  }
-  padding-top: 120px;
-  .top-image {
-    width: 100%;
-    display: block;
-    margin-top: 4rem;
-    @include desktop {
-      position: absolute;
-      bottom: 4.3rem;
+  @include desktop {
+    .c-row {
       width: 800px;
-      right: 0;
+      margin: auto;
+    }
+    padding-top: 20rem;
+    padding-bottom: 14rem;
+    .c-right-sec {
     }
   }
-  #map {
-    height: 300px;
-    width: 100%;
+  .l-leaf {
+    transform: rotate(55deg);
+    width: 120px;
+    left: 30px;
   }
-  .address-section {
-    .icon-before {
-      font-size: 20px;
-      line-height: 26px;
-      a {
-        text-decoration-color: #fff;
-      }
-      .icon-footer {
-        top: 7px;
-      }
-    }
-  }
-  .head {
-    font-size: 3.25rem;
-  }
-  .padding-side {
-    padding-right: 4rem !important;
-  }
-  .border-bottom-contact {
-    border-bottom: 1px solid $primary;
-    margin-bottom: 2rem;
-    opacity: 0.5;
+  .r-leaf {
+    right: 50px;
+    transform: rotate(245deg);
+    width: 150px;
+    top: 16rem;
   }
 }
