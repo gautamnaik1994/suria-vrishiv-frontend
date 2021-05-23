@@ -70,4 +70,17 @@
   .double-box {
     height: fit-content;
   }
+
+  .l-leaf {
+    transform: rotate(115deg);
+    width: 180px;
+    left: 40px;
+    top: 85rem;
+  }
+  .r-leaf {
+    right: 50px;
+    transform: rotate(245deg);
+    width: 150px;
+    top: 123rem;
+  }
 }
