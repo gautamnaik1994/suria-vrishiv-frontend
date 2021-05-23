@@ -113,7 +113,7 @@ input:-webkit-autofill:active {
 
 input {
   border: 0 !important;
-  border-bottom: 1px solid $primary !important;
+  border-bottom: 1px solid rgba($primary, 0.6) !important;
 }
 .overflow-x-hidden {
   overflow-x: hidden;

@@ -34,17 +34,22 @@ for (i = 0; i < acc.length; i++) {
 
 var myNav = document.getElementById('navbar');
 var navBar = document.getElementById('navbar-image');
+var navBarHolder = document.getElementById('navbarSupportedContent');
 window.onscroll = function () {
   if (document.body.scrollTop >= 200) {
     myNav.style.backgroundColor = '#000'; 
     myNav.classList.add("navbar-min");
+    navBarHolder.classList.add("navbar-min");
     myNav.style.height = '60px'; 
     navBar.style.height = '60px'; 
+    navBar.style['padding-top'] = '0px'; 
   }
   else {
     myNav.style.backgroundColor = 'transparent';
     myNav.classList.remove("navbar-min");
-    myNav.style.height = '100px';
-    navBar.style.height = '100px';
+    navBarHolder.classList.remove("navbar-min");
+    myNav.style.height = '120px';
+    navBar.style['padding-top'] = '30px'; 
+    navBar.style.height = '120px';
   }
 };
