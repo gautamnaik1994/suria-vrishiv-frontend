@@ -8,10 +8,10 @@
     height: 100vh;
     img {
       max-width: 90%;
-      height: auto;
+      height: 67%;
       display: block;
       position: absolute;
-      bottom: 50px;
+      top: 250px;
       right: -165px;
     }
     @include desktop {
@@ -19,7 +19,7 @@
       img {
         max-width: 75%;
         width: 75%;
-        height: auto;
+        height: 67%;
       }
       .poem {
         font-size: clamp(14px, 1.1vw, 18px);
