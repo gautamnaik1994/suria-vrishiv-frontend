@@ -1,5 +1,8 @@
 .about {
+  overflow-x: hidden;
+  position: relative;
   .banner {
+    overflow-x: hidden;
     .banner-content {
       padding-top: 100px;
       // padding-left: 100px;
@@ -74,11 +77,11 @@
   .l-leaf {
     transform: rotate(115deg);
     width: 180px;
-    left: 55px;
+    left: 40px;
     top: 85rem;
   }
   .r-leaf {
-    right: 35px;
+    right: 50px;
     transform: rotate(265deg);
     width: 170px;
     top: 133rem;
