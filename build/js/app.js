@@ -37,7 +37,7 @@ var navBar = document.getElementById('navbar-image');
 var navBarHolder = document.getElementById('navbarSupportedContent');
 window.onscroll = function () {
   if (document.body.scrollTop >= 200) {
-    myNav.style.backgroundColor = '#1e453e'; 
+    myNav.style.backgroundColor = '#000'; 
     myNav.classList.add("navbar-min");
     navBarHolder.classList.add("navbar-min");
     myNav.style.height = '60px'; 
