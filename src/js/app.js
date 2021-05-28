@@ -35,6 +35,12 @@ for (i = 0; i < acc.length; i++) {
 var myNav = document.getElementById('navbar');
 var navBar = document.getElementById('navbar-image');
 var navBarHolder = document.getElementById('navbarSupportedContent');
+window.onload = function () {
+  if (window.location.pathname == '/' || window.location.pathname == '/index.html') {
+    myNav.style.height = '150px';
+    navBar.style.height = '150px';
+  }
+};
 window.onscroll = function () {
   if (document.body.scrollTop >= 80) {
     myNav.style.backgroundColor = '#1e453e';
@@ -48,11 +54,14 @@ window.onscroll = function () {
     myNav.style.backgroundColor = 'transparent';
     myNav.classList.remove("navbar-min");
     navBarHolder.classList.remove("navbar-min");
-    myNav.style.height = '120px';
-    navBar.style.height = '120px';
     if (window.location.pathname == '/' || window.location.pathname == '/index.html') {
       myNav.style.height = '150px';
       navBar.style.height = '150px';
+    } else {
+      myNav.style.height = '120px';
+      navBar.style.height = '120px';
+      myNav.classList.remove("navbar-min");
+      navBarHolder.classList.remove("navbar-min");
     }
 
     navBar.style['padding-top'] = '30px';
