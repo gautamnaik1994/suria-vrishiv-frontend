@@ -36,20 +36,25 @@ var myNav = document.getElementById('navbar');
 var navBar = document.getElementById('navbar-image');
 var navBarHolder = document.getElementById('navbarSupportedContent');
 window.onscroll = function () {
-  if (document.body.scrollTop >= 200) {
-    myNav.style.backgroundColor = '#1e453e'; 
+  if (document.body.scrollTop >= 80) {
+    myNav.style.backgroundColor = '#1e453e';
     myNav.classList.add("navbar-min");
     navBarHolder.classList.add("navbar-min");
-    myNav.style.height = '60px'; 
-    navBar.style.height = '60px'; 
-    navBar.style['padding-top'] = '0px'; 
+    myNav.style.height = '60px';
+    navBar.style.height = '60px';
+    navBar.style['padding-top'] = '0px';
   }
   else {
     myNav.style.backgroundColor = 'transparent';
     myNav.classList.remove("navbar-min");
     navBarHolder.classList.remove("navbar-min");
     myNav.style.height = '120px';
-    navBar.style['padding-top'] = '30px'; 
     navBar.style.height = '120px';
+    if (window.location.pathname == '/' || window.location.pathname == '/index.html') {
+      myNav.style.height = '150px';
+      navBar.style.height = '150px';
+    }
+
+    navBar.style['padding-top'] = '30px';
   }
 };

@@ -1,6 +1,7 @@
 .navbar {
   padding: 0;
   transition: all 0.3s ease-in;
+  
   a {
     font-size: 20px;
     text-transform: uppercase;
@@ -25,12 +26,16 @@
       align-items: center !important;
       margin-bottom: 0px !important;
     }
+    .nav-link.active {
+      padding-bottom: 0px;
+      padding-top: 0;
+    }
   }
   .navbar-toggler-icon {
     filter: invert(67%) sepia(98%) saturate(6807%) hue-rotate(31deg) brightness(215%) contrast(103%);
   }
   .navbar-toggler {
-    border-color: rgb(242,216,152);
+    border-color: rgb(242, 216, 152);
   }
   .nav-text {
     margin-bottom: 30px;
