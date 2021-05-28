@@ -5,9 +5,6 @@
       color: #1e453e;
     }
   }
-  .margin-head {
-    margin-top: 135px;
-  }
   .banner {
     background-image: url("../img/Banner.png");
     height: 100vh;
@@ -89,9 +86,13 @@
     padding-bottom: 9rem;
     overflow: hidden;
   }
-  .arrow-down {
-    display: flex;
-    justify-content: center;
-    margin: 50px;
+  .arrow {
+    position: absolute;
+    transform: rotateZ(90deg);
+    bottom: 0px;
+    img {
+      height: 50px;
+      width: 50px;
+    }
   }
 }
